@@ -168,3 +168,101 @@ class GiaoVien
          
          
          }
+        class CauThu{
+            int SoAo;
+            String Ten,Doi;
+            
+            void setTen(String name)
+            {
+                this.Ten=name;
+            }
+            void setDoi(String td)
+            {
+                this.Doi=td;
+            }
+            void setSoAo(int number)
+            {
+                this.SoAo=number;
+            }
+            String getTen()
+            {
+                return this.Ten;
+            }
+            String getDoi()
+            {
+                return this.Doi;
+            }
+            int getSoAo()
+            {
+                return this.SoAo;
+            }
+        } 
+        
+        public class Sach{
+            int SoTrang,GiaTien;
+            String Loai;
+            void setSoTrang(int st)
+            {
+                this.SoTrang=st;
+            }
+            void setGiaTien(int gt)
+            {
+                this.GiaTien=gt;
+            }
+            void setLoai(String l)
+            {
+                this.Loai=l;
+            }
+            String getLoai()
+            {
+                return this.Loai;
+            }
+            int getGiaTien()
+            {
+                return this.GiaTien;
+            }
+            int getSoTrang()
+            {
+                return this.SoTrang;
+            }
+        }
+        
+         class Car{
+            String Ten,Loai,MauSac;
+            int GiaTien
+            void Chay{
+                    System.out.println("brum brum");
+            }
+            void setTen(String name)
+            {
+                this.Ten=name;
+            }
+            void setLoai(String loai)
+            {
+                this.Loai=loai;
+            }
+            void setMauSac(String colour)
+            {
+                this.MauSac=colour;
+            }
+            void setGiaTien(int price)
+            {
+                this.GiaTien=price;
+            }
+            String getTen()
+            {
+                return this.Ten;
+            }
+            String getLoai()
+            {
+                return this.Loai;
+            }
+            String getMauSac()
+            {
+                return this.MauSac;
+            }
+            int getGiaTien()
+            {
+                return this.GiaTien;
+            }
+        }
