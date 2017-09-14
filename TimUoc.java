@@ -12,20 +12,18 @@ package tuan2;
 public class TimUoc {
     public static int timuoc(int a,int b)
     {
-        int uc=0;
-        for(int i=b;i>0;i--)
+       
+        while(a!=b)
         {
-            if(a%i==0&&b%i==0)
-            {
-                uc=i;
-                break;
-            }
+            if(a>b) a=a-b;
+             else 
+                b=b-a;
         }
-        return uc;
+        return a;
     }
     public static void main(String[] args) {
-        int a=20;
-        int b=10;
+        int a=100;
+        int b=100;
         System.out.println("Uoc chung lon nhat la :"+timuoc(a,b));
     }
     

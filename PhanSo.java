@@ -50,7 +50,23 @@ public class PhanSo {
        phanso.mau=a.mau*b.tu;
        return phanso;
    }
-   static 
+   static int UCLN(int a,int b)
+   {
+       while(a!=b)
+       {
+           if(a>b) a=a-b;
+           else
+              b=b-a;
+       }
+       return a;
+   }
+   static PhanSo ToiGian(PhanSo ps)
+   {
+       PhanSo phanso=new PhanSo();
+       phanso.tu=(int)ps.tu/UCLN(Math.abs(ps.tu),Math.abs(ps.mau));
+       phanso.mau=(int)ps.mau/UCLN(Math.abs(ps.tu),Math.abs(ps.mau));
+       return phanso;
+   }
    public static boolean equals(PhanSo a,PhanSo b)
    {
        if(Thuong(a,b).mau==Thuong(a,b).tu)
@@ -60,8 +76,9 @@ public class PhanSo {
        else
            return false;
    }
-   static HienThi(PhanSo ps)
+   static void HienThi(PhanSo ps)
    {
+       
        if(ps.tu==0) System.out.println(ps.tu);
        else
        
@@ -69,19 +86,21 @@ public class PhanSo {
        
    }
     public static void main(String[] args) {
-        PhanSo phanso1=new PhanSo(2,3);
+        PhanSo phanso1=new PhanSo(5,10);
         PhanSo phanso2=new PhanSo(3,4);
+        System.out.println("Phan so thu nhat:" +phanso1.tu+"/"+phanso1.mau);
+        System.out.println("Phan so thu hai:"+phanso2.tu+"/"+phanso2.mau);
         System.out.println("Tong la:");
-        HienThi(Tong(phanso1,phanso2));
-    
+        HienThi(ToiGian(Tong(phanso1,phanso2)));
+        
         System.out.println("Hieu la:");
-        HienThi(Hieu(phanso1,phanso2));
+        HienThi(ToiGian(Hieu(phanso1,phanso2)));
         
         System.out.println("Tich la:");
-        HienThi(Tich(phanso1,phanso2));
+        HienThi(ToiGian(Tich(phanso1,phanso2)));
         
         System.out.println("Thuong la:");
-        HienThi(Thuong(phanso1,phanso2));
+        HienThi(ToiGian(Thuong(phanso1,phanso2)));
         
         if(equals(phanso1,phanso2))
         {
@@ -91,5 +110,7 @@ public class PhanSo {
         {
             System.out.println("Hai phan so khac nhau");
         }
+      
     }
+    
 }
