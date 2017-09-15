@@ -1,4 +1,4 @@
-/*
+﻿dd/*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -11,9 +11,9 @@ package tuan2;
  */
 //Khởi tạo class ConMeo
  class ConMeo {
-     //Khởi tạo đối tượng cân nặng
+     //Khởi tạo thuộc tính cân nặng
     private float CanNang;
-    //Khởi tạo đối tượng tên và loại mèo
+    //Khởi tạo thuộc tính tên và loại mèo
     private String Ten,Loai;
     //Hàm kêu
     void keu(){
@@ -56,9 +56,9 @@ package tuan2;
 //Khởi tạo lớp GiaoVien
 class GiaoVien
 {
-    //Khởi tạo đối tượng tên và môn học
+    //Khởi tạo thuộc tính tên và môn học
     private String Ten,MonHoc;
-    //Khởi tạo đối tượng tuổi
+    //Khởi tạo thuộc tính tuổi
     private int Tuoi;
     //Khởi tạo hàm giangbai
     void giangbai()
@@ -98,7 +98,7 @@ class GiaoVien
 }
 //Lớp máy bay
         class MayBay{
-            //Khởi tạo đối tượng Ten và Loai
+            //Khởi tạo thuộc tính Ten và Loai
             private String Ten,Loai;
             //Khởi tạo đối tương SoKhach
             private int SoKhach;
@@ -141,9 +141,9 @@ class GiaoVien
 }
          //Khởi tạo lớp Cay
         class Cay{
-            //Khởi tạo đối tượng ChieuCao
+            //Khởi tạo thuộc tính ChieuCao
             private float ChieuCao;
-            //Khởi tạo đối tượng Loai
+            //Khởi tạo thuộc tính Loai
             private String Loai;
             //Hàm set giá trị cho ChieuCao
             void setChieuCao(float height)
@@ -168,7 +168,7 @@ class GiaoVien
  }
         //Khởi tạo lớp SinhVien
          class SinhVien{
-         //Khởi tạo đối tượng Ten, MSSV,Khoa kiểu String
+         //Khởi tạo thuộc tính Ten, MSSV,Khoa kiểu String
              private String Ten,MSSV,Khoa;
              //Khởi tạo hàm study
              void study()
@@ -210,9 +210,9 @@ class GiaoVien
          }
          //Khởi tạo lớp CauThu
         class CauThu{
-            //Khởi tạo đối tượng SoAo kiểu int
+            //Khởi tạo thuộc tính SoAo kiểu int
             int SoAo;
-            //Khởi tạo đối tượng Ten,Doi kiểu String
+            //Khởi tạo thuộc tính Ten,Doi kiểu String
             String Ten,Doi;
             //Hàm set giá trị cho Ten
             void setTen(String name)
@@ -234,7 +234,7 @@ class GiaoVien
             {
                 return this.Ten;
             }
-            //Hàm lấy giá trị của đối tượng Doi
+            //Hàm lấy giá trị của thuộc tính Doi
             String getDoi()
             {
                 return this.Doi;
@@ -249,7 +249,7 @@ class GiaoVien
         class Sach{
             //Khởi tạo đổi tượng SoTrang,GiaTien
             int SoTrang,GiaTien;
-            //Khởi tạo đối tượng Loai kiểu String
+            //Khởi tạo thuộc tính Loai kiểu String
             String Loai;
             //Hàm set giá trị cho SoTrang
             void setSoTrang(int st)
@@ -284,7 +284,7 @@ class GiaoVien
         }
         //Khởi tạo lớp Car
          class Car{
-             //Khởi tạo đối tượng Ten,Loai,MauSac kiểu String
+             //Khởi tạo thuộc tính Ten,Loai,MauSac kiểu String
             String Ten,Loai,MauSac;
             //Khởi tạo đổi tượng GiaTien kiểu int
             int GiaTien
