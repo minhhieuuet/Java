@@ -9,7 +9,7 @@ package tuan2.MoTa;
  *
  * @author MINH HIEU
  */
- class ConMeo {
+ public class ConMeo {
      //Khởi tạo thuộc tính cân nặng
     private float CanNang;
     //Khởi tạo thuộc tính tên và loại mèo
@@ -51,5 +51,8 @@ package tuan2.MoTa;
     {
         return this.Loai;
     }
+     public static void main(String[] args) {
+         
+     }
 }
 

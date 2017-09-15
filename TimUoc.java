@@ -25,6 +25,7 @@ public class TimUoc {
         int a=100;
         int b=100;
         System.out.println("Uoc chung lon nhat la :"+timuoc(a,b));
+        
     }
-    
+   
 }
